@@ -6,8 +6,10 @@
   <title>Generation cart</title>
 </head>
 <body>
+  <!-- Título -->
   <h1>Generation Cart</h1>
 
+  <!-- Creación de la tabla -->
   <table id="cart">
     <thead>
       <tr>
@@ -28,16 +30,19 @@
           $<span>25.00</span>
         </td>
     
+        <!-- Inpur para ingresar cantidad -->
         <td class="qty">
           <label>
             <input type="number" value="0" min="0">
           </label>
         </td>
     
+        <!-- Impresión del total del producto-->
         <td class="subtot">
           $<span>0</span>
         </td>
     
+        <!-- Botón de borrado -->
         <td class="rm">
           <button class="btn btn-delete">Delete</button>
         </td>
@@ -67,6 +72,8 @@
       </tr>
     </tbody>
     <tfoot>
+      
+      <!-- Creación de un nuevo producto-->
       <tr class="new">
         <td>
           <input type="text" placeholder="Product Name"/>
@@ -84,12 +91,14 @@
 
   </table>
 
+  <!-- Cálculo del total -->
   <p class="cta">
     <button id="calc" class="btn btn-success">Calculate prices</button>
   </p>
 
-  <h2 id="total-value">Total: $<span>0</span></h2>
+  <h2 id="total-value">Total: $<span id = "impresion-total">0</span></h2>
 
+  <!-- Script -->
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
